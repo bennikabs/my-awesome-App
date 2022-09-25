@@ -69,7 +69,7 @@ function showWeather(response) {
 
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHtml = Math.round(
+  document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#weather-condition").innerHTML =
