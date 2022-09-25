@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">Berlin</div>
+        <div class="col">New York</div>
+        <div class="col">Abuja</div>
+        <div class="col">Seoul</div>
+      </div>
+      <form id="search-form">
+        <input type="text" placeholder="Enter a city" id="enterCity" autofocus />
+        <button type="submit" class="btn btn-primary" id="search-location">SEARCH</button>
+        <button type="submit" class="btn btn-primary" id="current-location">CURRENT</button>
+      </form>
+      <h1>
+      <div class="row">
+        <div class="col-1" id="city" >Berlin</div><div class="col-2" id="tem-perat">16° <div class="d-flex flex-row mb-3">
+          <div class="p-2"><a id="fahrenheit" href=".com">F</a></div>
+          <div class="p-2"><a id="celsius"href=".com">C</a></div></div>
+        </div>
+        <h3 class="TodayWeather">
+        <p id="week-day">Monday 2:00am</p>
+        
+        <p id="weather-condition">Partly CLoudy</p>
+        </h3>
+      
+      </div>
+      </h1>
+    
+
+
+      <p class="forecast">
+      5-DAY FORECAST</p>
+
+      <div class="row">
+        <div class="col">Today</div>
+        <div class="col">☁️</div>
+        <div class="col">14°</div>
+        <div class="col">24°</div>
+      </div>
+      <div class="row">
+        <div class="col">Tuesday</div>
+        <div class="col">☁️</div>
+        <div class="col">14°</div>
+        <div class="col">24°</div>
+      </div>
+      <div class="row">
+        <div class="col">Wednesday</div>
+        <div class="col">☁️</div>
+        <div class="col">14°</div>
+        <div class="col">24°</div>
+      </div>
+      <div class="row">
+        <div class="col">Thursday</div>
+        <div class="col">☁️</div>
+        <div class="col">14°</div>
+        <div class="col">24°</div>
+      </div>
+      <div class="row">
+        <div class="col">Friday</div>
+        <div class="col">☁️</div>
+        <div class="col">14°</div>
+        <div class="col">24°</div>
+      </div>
+      
+      
+      <p class="precip" id="pressure" >Pressure: 2%</p>
+      <p class="humid" id="humidity" >Humidity: 82%</p>
+      <p class="wind" id="wind" >Wind:3km/h</p>
+      
+
+      <br class="AirInfo" />
+      <div class="row">
+        <div class="col">❊AIR QUALITY</div>
+      </div>
+      <div class="row">
+        <div class="col">Moderate</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Air quality index is 22, which is the same as yesterday at about this
+          time
+        </div>
+      </div>
+      </div>
+    </div>
+    <footer>Created by Benny Kabs</footer>
+    <script src="src/index.js"></script>
+  </body>
+  </html>
