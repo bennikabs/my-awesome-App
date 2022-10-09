@@ -2,7 +2,6 @@ body {
   text-align: center;
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
   color: whitesmoke;
-
   width: 100%;
 }
 .col-1 {
@@ -16,9 +15,7 @@ body {
   padding-left: 300px;
   padding-top: -900px;
 }
-.p-2 {
-  font-size: 40px;
-}
+
 .TodayWeather {
   text-align: left;
   font-size: 15px;
@@ -32,21 +29,27 @@ body {
 .row5 {
   text-align: left;
 }
+.weather-temperature .p-2 {
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  top: -86px;
+}
+.weather-temperature .degreeLink {
+  color: white;
+  text-decoration: none;
+  cursor: default;
+}
 
-.precip {
-  text-align: right;
-  padding-top: 2em;
+.weather-temperature .degreeLink:hover {
+  text-decoration: none;
 }
-.humid {
-  text-align: right;
-}
+.pressure,
+.humid,
 .wind {
   text-align: right;
 }
-img {
-  width: "100%";
-  height: "100%";
-}
+
 .container {
   background-image: url(../images/weatherApp.jpg);
   background-size: cover;

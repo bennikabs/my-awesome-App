@@ -15,7 +15,6 @@
     <title>Document</title>
   </head>
   <body>
-    
     <div class="container">
       <div class="row">
         <div class="col">Berlin</div>
@@ -30,9 +29,17 @@
       </form>
       <h1>
       <div class="row">
-        <div class="col-1" id="city" >Berlin</div><div class="col-2" id="tem-perat">16° <div class="d-flex flex-row mb-3">
-          <div class="p-2"><a id="fahrenheit" href=".com">F</a></div>
-          <div class="p-2"><a id="celsius"href=".com">C</a></div></div>
+        <div class="col-1" id="city" >Berlin</div>
+        <div class="col-6">
+          <div class="d-flex weather-temperature">
+               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Clear" id="icon"   />
+               <div>
+                <strong class="col-2"id="tem-perat">16</strong> 
+                <span class="p-2"> <a href ="#" class="degreeLink" id="celsius"> °C</a>| 
+                   <a href ="#" class="degreeLink" id="fahrenheit" > °F </a> 
+                 </span>
+                </div>
+          </div>
         </div>
         <h3 class="TodayWeather">
         <p id="week-day">Monday 2:00am</p>
@@ -42,9 +49,6 @@
       
       </div>
       </h1>
-    
-
-
       <p class="forecast">
       5-DAY FORECAST</p>
 
@@ -80,9 +84,9 @@
       </div>
       
       
-      <p class="precip" id="pressure" >Pressure: 2%</p>
-      <p class="humid" id="humidity" >Humidity: 82%</p>
-      <p class="wind" id="wind" >Wind: 3 km/h</p>
+      <p class="pressure">Pressure:<span id="pressure"></span> hPa</p>
+      <p class="humid"> Humidity:<span  id="humidity"></span>%</p>
+      <p class="wind"> Wind:<span  id="wind"></span>km/h</p>
       
 
       <br class="AirInfo" />
