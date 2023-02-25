@@ -4,6 +4,7 @@ body {
   color: whitesmoke;
   width: 100%;
 }
+
 .col-1 {
   text-align: left;
   font-size: 70px;
@@ -41,6 +42,14 @@ body {
   cursor: default;
 }
 
+.icon {
+  width: 250px;
+  height: 200px;
+  display: block;
+  margin: auto;
+  left: -90px;
+}
+
 .weather-temperature .degreeLink:hover {
   text-decoration: none;
 }
@@ -49,18 +58,20 @@ body {
 .wind {
   text-align: right;
 }
-
 .container {
   background-image: url(../images/weatherApp.jpg);
   background-size: cover;
+  padding: 85px 10px 100px;
   background-position: center;
+  max-width: 900px;
+  border-radius: 40px;
 }
-
 .forecast {
   text-align: left;
   font-size: 30px;
   padding-left: 50px;
 }
+
 footer {
   font-family: monospace;
   color: black;
