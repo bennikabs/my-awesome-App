@@ -11,7 +11,7 @@ or view the projectApp directly on netlify
  https://guileless-beignet-91de4d.netlify.app.
 
 Contact
-Your Name – bennykabs90@example.com
+benedicta – bennykabs90@example.com
 Project Link: https://github.com/bennikabs/my-awesome-App.git .
 
 Deployment on Netlify,
