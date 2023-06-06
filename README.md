@@ -1,7 +1,7 @@
 # my-awesome-App
 weathApp
 Built With
-•	https://getbootstrap.com 
+•	https://getbootstrap.com , https://openweathermap.org.
 Getting Started
 Run the development server;
 •	npm
