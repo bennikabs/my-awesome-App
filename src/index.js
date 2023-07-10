@@ -100,14 +100,17 @@ function displayFahrenheiTemperature(event) {
   let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
+
+
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusButton.classList.add("degreeLink");
   fahrenheitButton.classList.remove("degreeLink");
-  celsiusTemperature = response.data.main.temp;
   let temperatureElement = document.querySelector("#tem-perat");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+
 let fahrenheitButton = document.querySelector("#fahrenheit");
 fahrenheitButton.addEventListener("click", displayFahrenheiTemperature);
 let celsiusButton = document.querySelector("#celsius");
@@ -139,6 +142,7 @@ function showWeather(response) {
 }
 
 let celsiusTemperature = null;
+
 
 function searchCity(city) {
   let apiKey = "c68d952d49c1f7b73f7353b16aa88d42";
@@ -172,3 +176,12 @@ let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getCurrentLocation);
 
 searchCity("Berlin");
+
+
+
+
+
+
+
+
+
