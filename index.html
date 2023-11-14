@@ -16,38 +16,42 @@
   </head>
   <body>
     <div class="container">
+     <div class="bg-image">
       
-      <form id="search-form">
+      <form id="search-form" class="form">
         <input
           type="text"
           placeholder="Enter a city"
           id="enterCity"
           autofocus
         />
-        <button type="submit" class="btn btn-primary" id="search-location">
+        <button type="submit" class="btn btn-primary searchButton" id="search-location">
           SEARCH
         </button>
-        <button type="submit" class="btn btn-primary" id="current-location">
+        <button type="submit" class="btn btn-primary currentButton" id="current-location">
           CURRENT
         </button>
       </form>
       <h1>
         <div class="row">
-          <div class="col-1" id="city">Berlin</div>
-          <div class="col-6">
-            <div class="d-flex weather-temperature">
+         <div class="col-1 currentcity" id="city">Berlin</div>
+          <div class="col">
+            <div class="d-flex weather-temperature ">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Clear"
                 id="icon"
-                class="icon"
+                class="icon img-fluid pt-4"
               />
-              <div>
-                <strong class="col-2" id="tem-perat">16</strong>
+             
+          <div class="col-12 col-md-6 weatherFigure">
+                
+                <strong class=" currentTemperature" id="tem-perat">16</strong>
                 <span class="p-2">
-                  <a href="#" class="degreeLink" id="celsius"> °C</a>|
+                  <a href="#" class="degreeLink" id="celsius"> °C</a> |
                   <a href="#" class="degreeLink" id="fahrenheit"> °F </a>
                 </span>
+                
               </div>
             </div>
           </div>
@@ -58,31 +62,35 @@
           </h3>
         </div>
       </h1>
-      <p class="forecast">6-DAY FORECAST</p>
+      <p class="forecast">5-DAY FORECAST</p>
       <hr>
       
       <div class="weatherForecast" id="forecast">
         <div class="row">
+          
               
             </div>
             </div>
-            
-          <p class="pressure">Pressure:<span id="pressure"></span> hPa</p>
-          <p class="humid">Humidity:<span id="humidity"></span>%</p>
-          <p class="wind">Wind:<span id="wind"></span>km/h</p>
-
+            <hr />
           
+           <div class="weatherParameters">
+          <p class="pressure">Pressure : <span id="pressure"></span> hPa</p>
+          <p class="humid">Humidity : <span id="humidity"></span>%</p>
+          <p class="wind">Wind : <span id="wind"></span>km/h</p>
+
+          </div> 
         </div>
-        <div class="weather-forecast" id="forecast"></div>
+       <div class="weather-forecast" id="forecast"></div>
       </hr>   
       </div>
+     </div>
     </div>
     <footer>
       <a
         href="https://github.com/bennikabs/my-awesome-App.git"
         target="“_blank”"
         >Open SourceCode</a
-      >by Benny Kabs
+      > by Benny Kabs
     </footer>
     <script src="src/index.js"></script>
   </body>
